@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Spaces | Table Collections</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #c0392b;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Banner styles */
+        .table-banner {
+            background-color: var(--light-bg);
+            border-bottom: 1px solid #eef0f2;
+        }
+
+        /* Card Custom Layouts */
+        .table-card {
+            border: none;
+            border-radius: 0;
+            background-color: #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .table-img-container {
+            position: relative;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background-color: var(--light-bg);
+        }
+
+        .table-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .table-card:hover .table-img-container img {
+            transform: scale(1.05);
+        }
+
+        .table-card:hover {
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+
+        /* Badges */
+        .material-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(255, 255, 255, 0.95);
+            color: var(--primary-color);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 6px 12px;
+            text-uppercase: true;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Quick Specs List */
+        .spec-list {
+            font-size: 0.85rem;
+            color: #6c757d;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .spec-list li {
+            margin-bottom: 4px;
+        }
+
+        .spec-list i {
+            color: var(--primary-color);
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="index.html">Elegant Spaces</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Context Intro Banner -->
+    <header class="table-banner py-5 text-center">
+        <div class="container py-3">
+            <span class="text-uppercase tracking-wider text-muted small fw-bold">Precision Carpentry</span>
+            <h1 class="display-5 fw-bold mt-1 mb-2 text-uppercase" style="color: var(--primary-color);">Bespoke Table Gallery</h1>
+            <p class="text-muted mx-auto" style="max-width: 600px;">From heavy statement dining setups to sleek, minimalist central coffee bases, explore options built with premium architectural integrity.</p>
+        </div>
+    </header>
+
+    <!-- Main Table Gallery Workspace -->
+    <main class="container my-5 py-3">
+        <div class="row g-4">
+
+            <!-- Item 1: Premium Marble Dining Table -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card table-card h-100 shadow-sm">
+                    <div class="table-img-container">
+                        <span class="material-badge">Carrara Marble</span>
+                        <img src="https://media.designcafe.com/wp-content/uploads/2019/12/20235011/dining-room-cabinets-for-your-home.jpg" alt="Premium Italian White Marble Top Dining Table with modern chairs">
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-2">Imperial Marble Dining Table</h5>
+                        <ul class="spec-list my-3">
+                            <li><i class="bi bi-arrows-fullscreen"></i> 240cm x 110cm x 75cm</li>
+                            <li><i class="bi bi-people"></i> Seats up to 8 adults comfortably</li>
+                            <li><i class="bi bi-shield-check"></i> High-gloss protective sealant</li>
+                        </ul>
+                        <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                            <span class="text-muted small">Custom Sizes Available</span>
+                            <a href="contact.html" class="btn btn-sm btn-outline-dark rounded-0 px-3">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Solid Oak Dining Table -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card table-card h-100 shadow-sm">
+                    <div class="table-img-container">
+                        <span class="material-badge">Solid Red Oak</span>
+                        <img src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?q=80&w=800" alt="Solid Oak Dining Table with natural wood grain finishes">
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-2">Nordic Oak Feast Table</h5>
+                        <ul class="spec-list my-3">
+                            <li><i class="bi bi-arrows-fullscreen"></i> 200cm x 100cm x 76cm</li>
+                            <li><i class="bi bi-people"></i> Seats 6 - 8 positions</li>
+                            <li><i class="bi bi-tree"></i> Matte anti-scratch eco-varnish</li>
+                        </ul>
+                        <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                            <span class="text-muted small">Premium Hardwood</span>
+                            <a href="contact.html" class="btn btn-sm btn-outline-dark rounded-0 px-3">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Luxury Modern Sculptural Table -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card table-card h-100 shadow-sm">
+                    <div class="table-img-container">
+                        <span class="material-badge">Polished Composite</span>
+                        <img src="https://s.alicdn.com/@sc04/kf/H2bce8de241194b269fbde27249bc72baV/Hot-Sale-New-Arrival-Luxury-Dining-Room-Furniture-Dining-Tables-Marble-Top-Modern-European-6-8-Seater-Design-Dining-Table-Set.png" alt="Luxury European Style Dining Table Set with sculptural chairs">
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-2">Avant-Garde Luxury Set</h5>
+                        <ul class="spec-list my-3">
+                            <li><i class="bi bi-arrows-fullscreen"></i> 220cm x 100cm x 75cm</li>
+                            <li><i class="bi bi-palette"></i> Available in Cream & Custom Velvets</li>
+                            <li><i class="bi bi-gem"></i> Geometric pedestal steel support</li>
+                        </ul>
+                        <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                            <span class="text-muted small">Showroom Exclusive</span>
+                            <a href="contact.html" class="btn btn-sm btn-outline-dark rounded-0 px-3">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Minimalist Walnut Coffee Table -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card table-card h-100 shadow-sm">
+                    <div class="table-img-container">
+                        <span class="material-badge">Natural Walnut</span>
+                        <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=800" alt="Minimalist wood slab low profile coffee table">
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-2">Horizon Low Coffee Table</h5>
+                        <ul class="spec-list my-3">
+                            <li><i class="bi bi-arrows-fullscreen"></i> 120cm x 120cm x 35cm</li>
+                            <li><i class="bi bi-layers"></i> Built-in hidden side drawers</li>
+                            <li><i class="bi bi-brush"></i> Hand-rubbed organic oil finish</li>
+                        </ul>
+                        <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                            <span class="text-muted small">Living Room Accent</span>
+                            <a href="contact.html" class="btn btn-sm btn-outline-dark rounded-0 px-3">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Elegant Entryway Console Table -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card table-card h-100 shadow-sm">
+                    <div class="table-img-container">
+                        <span class="material-badge">Iron & Oak</span>
+                        <img src="https://images.unsplash.com/photo-1581428982868-e410dd047a90?q=80&w=800" alt="Sleek entryway console accent table">
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-2">Linear Foyer Console</h5>
+                        <ul class="spec-list my-3">
+                            <li><i class="bi bi-arrows-fullscreen"></i> 140cm x 40cm x 85cm</li>
+                            <li><i class="bi bi-box"></i> Ultra-slim wall profile framework</li>
+                            <li><i class="bi bi-nut"></i> Powder-coated matte black iron</li>
+                        </ul>
+                        <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                            <span class="text-muted small">Foyer / Corridor Storage</span>
+                            <a href="contact.html" class="btn btn-sm btn-outline-dark rounded-0 px-3">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Page Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center text-muted small">
+            <p class="mb-0">&copy; 2026 Elegant Spaces. Handcrafted premium wood and metal joinery systems.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
